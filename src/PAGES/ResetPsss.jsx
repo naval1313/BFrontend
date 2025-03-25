@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 import Footer from "../COMPONENTS/Footer";
+import BASEURL from "../Config";
+
 
 
 const ResetPsss = () => {

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import { Toaster,toast } from 'react-hot-toast'
 import Footer from '../COMPONENTS/Footer'
+import BASEURL from "../Config";
+
 
 const MyWithdraw = () => {
 

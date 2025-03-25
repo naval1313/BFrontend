@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { FaRupeeSign } from "react-icons/fa";
 import Footer from '../COMPONENTS/Footer';
+import BASEURL from "../Config";
+
 
 
 const MyCurrentBalance = () => {
@@ -11,10 +13,7 @@ const MyCurrentBalance = () => {
     const id=localStorage.getItem("id")
      async function getAmount() {
          
-
-                          let api = `${BASEURL}/totalAmnt/?id=${id}`;
-
-
+     let api = `${BASEURL}/totalAmnt/?id=${id}`;
 
     await axios.get(api).then((res)=>{
          console.log(res.data)
